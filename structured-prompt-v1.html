@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f8fa" />
+    <meta
+      name="description"
+      content="A simple fish guide, pre-voyage safety checklist, and catch log for fisherfolk in Marinduque."
+    />
+    <title>BayanIsla — A guide for our waters</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="BayanIsla home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M5 22c3.8 0 3.8-3 7.6-3s3.8 3 7.6 3 3.8-3 7.6-3 3.8 3 7.6 3" />
+            <path d="M5 28c3.8 0 3.8-3 7.6-3s3.8 3 7.6 3 3.8-3 7.6-3 3.8 3 7.6 3" />
+            <path d="M20 4c-3.9 4-5.8 6.7-5.8 9.3a5.8 5.8 0 0 0 11.6 0C25.8 10.7 23.9 8 20 4Z" />
+          </svg>
+        </span>
+        <span class="brand-name">Bayan<span>Isla</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#species">Species guide</a>
+        <a href="#safety">Safety checklist</a>
+        <a href="#catch-log">Catch log</a>
+      </nav>
+      <a class="header-cta" href="#catch-log">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12" /></svg>
+        Log a catch
+      </a>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> PARA SA ATING MANGINGISDA</div>
+          <h1 id="hero-title">Care for the sea.<br />Care for <span>each other.</span></h1>
+          <p>A little help for the people who know these waters best. Check your gear, learn about local fish, and keep a record of every catch.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#safety">Get ready to go <span aria-hidden="true">→</span></a>
+            <a class="hero-secondary" href="#species">Explore the fish guide <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-sun" aria-hidden="true">☀</span> A community-made tool for Marinduque's coastal communities.</div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustration of a small fishing boat sailing near a green island">
+          <svg class="island-art" viewBox="0 0 540 350" fill="none" aria-hidden="true">
+            <circle cx="411" cy="81" r="32" fill="#F3CB81" />
+            <path d="M42 210c23-7 34 4 56-3 27-8 34 4 54-3 29-10 41 3 66-4" stroke="#9BC8D7" stroke-width="2" stroke-linecap="round" />
+            <path d="M240 154c36-48 85-65 148-51 32 7 51 24 82 26 22 1 38-8 54-20v89H196c16-11 28-24 44-44Z" fill="#477C91" />
+            <path d="M312 125c22-26 49-32 84-21 21 7 31 22 56 24" stroke="#6D9DAC" stroke-width="3" stroke-linecap="round" />
+            <path d="M0 227c34-12 59-8 89 0 33 9 57 8 88 0 29-8 59-8 91 1 29 9 57 10 89 2 31-8 58-11 92-2 26 7 54 7 91-4v126H0V227Z" fill="#67AFC2" />
+            <path d="M0 252c34-12 59-8 89 0 33 9 57 8 88 0 29-8 59-8 91 1 29 9 57 10 89 2 31-8 58-11 92-2 26 7 54 7 91-4" stroke="#B1DDE4" stroke-width="3" />
+            <path d="M0 283c34-12 59-8 89 0 33 9 57 8 88 0 29-8 59-8 91 1 29 9 57 10 89 2 31-8 58-11 92-2 26 7 54 7 91-4" stroke="#B1DDE4" stroke-width="2" opacity=".7" />
+            <path d="M166 213h153l-22 26H185l-19-26Z" fill="#F2E5C7" />
+            <path d="M166 213h153l-7 9H174l-8-9Z" fill="#D69C62" />
+            <path d="M232 147v66h71l-71-66Z" fill="#FAF4E6" />
+            <path d="M226 144h10v69h-10z" fill="#725C49" />
+            <path d="M211 247c12-5 23-5 35 0m27 3c11-4 22-4 33 0m25 16c12-5 23-5 35 0" stroke="#D3ECE1" stroke-width="3" stroke-linecap="round" />
+            <path d="M81 105c11-15 25-15 36 0-11 4-25 4-36 0Z" fill="#DCE9CE" />
+            <path d="M87 105c8-4 16-4 24 0" stroke="#719273" stroke-width="2" stroke-linecap="round" />
+            <path d="M120 76c12-16 26-16 38 0-12 4-26 4-38 0Z" fill="#DCE9CE" />
+            <path d="M127 76c8-4 16-4 24 0" stroke="#719273" stroke-width="2" stroke-linecap="round" />
+            <path d="M440 170c12-7 20-7 32 0-12 7-20 7-32 0Zm32 0 8-7v14l-8-7Z" fill="#F7F4E7" />
+            <circle cx="444" cy="169" r="1.4" fill="#455D52" />
+          </svg>
+          <div class="art-caption"><span class="caption-dot"></span> Marinduque, Philippines <span class="caption-separator">·</span> Heart of the Philippines</div>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="hero-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"><span></span><span class="divider-shell">〰</span><span></span></div>
+
+      <section class="content-section species-section" id="species" aria-labelledby="species-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">KNOW WHAT'S IN OUR WATERS</span>
+            <h2 id="species-title">A guide to local fish</h2>
+            <p>A few familiar species and what makes each one special.</p>
+          </div>
+          <span class="heading-stamp" aria-hidden="true">FROM SEA<br />TO SHORE</span>
+        </div>
+        <div class="species-grid">
+          <article class="species-card tuna-card">
+            <div class="species-card-top"><span class="fish-illustration fish-tuna" aria-hidden="true">◉</span><span class="species-number">01</span></div>
+            <span class="species-category">PELAGIC FISH</span>
+            <h3>Yellowfin tuna <span lang="fil">Tulingan / Tambakol</span></h3>
+            <p>A fast-swimming open-water fish, recognized by its long yellow dorsal and anal fins. An important food and commercial species across the tropics.</p>
+            <div class="species-fact"><span aria-hidden="true">↗</span> Open-ocean swimmer</div>
+          </article>
+          <article class="species-card tilapia-card">
+            <div class="species-card-top"><span class="fish-illustration fish-tilapia" aria-hidden="true">◉</span><span class="species-number">02</span></div>
+            <span class="species-category">FRESHWATER FISH</span>
+            <h3>Tilapia <span lang="fil">Tilapya</span></h3>
+            <p>A hardy freshwater fish commonly raised in ponds and inland waters. Tilapia adapts well to aquaculture and is a familiar food fish.</p>
+            <div class="species-fact"><span aria-hidden="true">↗</span> Freshwater habitat</div>
+          </article>
+          <article class="species-card crab-card">
+            <div class="species-card-top"><span class="fish-illustration fish-crab" aria-hidden="true">✳</span><span class="species-number">03</span></div>
+            <span class="species-category">COASTAL CRUSTACEAN</span>
+            <h3>Mud crab <span lang="fil">Alimango</span></h3>
+            <p>Found in mangrove forests and brackish estuaries. Healthy mangroves provide important shelter and feeding grounds for mud crabs.</p>
+            <div class="species-fact"><span aria-hidden="true">↗</span> Mangrove habitat</div>
+          </article>
+        </div>
+        <p class="section-footnote"><span aria-hidden="true">✳</span> General species information for learning. Habitat and catch may vary by area and season.</p>
+      </section>
+
+      <section class="safety-section" id="safety" aria-labelledby="safety-title">
+        <div class="safety-copy">
+          <span class="section-kicker">A FEW MOMENTS BEFORE YOU GO</span>
+          <h2 id="safety-title">Ready the boat,<br />ready yourself.</h2>
+          <p>A simple check before every trip can make a real difference. Check your local forecast and official advisories before heading out.</p>
+          <div class="safety-progress" aria-live="polite">
+            <div class="progress-heading"><span>Trip readiness</span><strong id="progress-count">0 of 6 ready</strong></div>
+            <div class="progress-track" id="progress-track" role="progressbar" aria-label="Safety checklist progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+              <span id="progress-fill"></span>
+            </div>
+            <span class="progress-message" id="progress-message">Take a moment to check each item.</span>
+          </div>
+          <button class="reset-button" id="reset-checklist" type="button">Reset checklist <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7a6 6 0 1 1-.4 5M4 3v4h4" /></svg></button>
+        </div>
+        <div class="safety-list" aria-label="Pre-voyage safety items">
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>Life jackets for everyone</strong><small>Check that each one fits and is in good condition.</small></span><span class="item-number">01</span></label>
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>Boat and engine checked</strong><small>Inspect the hull, engine, fuel, and basic tools.</small></span><span class="item-number">02</span></label>
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>Communication device ready</strong><small>Charge your phone or radio and keep it protected.</small></span><span class="item-number">03</span></label>
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>Shore contact informed</strong><small>Share your route and expected return time.</small></span><span class="item-number">04</span></label>
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>First-aid kit on board</strong><small>Make sure the kit is stocked and easy to reach.</small></span><span class="item-number">05</span></label>
+          <label class="safety-item"><input class="safety-checkbox" type="checkbox" /><span class="custom-check" aria-hidden="true"></span><span class="safety-item-copy"><strong>Water and sun protection packed</strong><small>Bring drinking water, sun cover, and essentials.</small></span><span class="item-number">06</span></label>
+          <div class="advisory-note"><span class="advisory-icon" aria-hidden="true">i</span><span>This checklist is a reminder, not a weather or sea-condition report. Follow official local advisories.</span></div>
+        </div>
+      </section>
+
+      <section class="catch-section content-section" id="catch-log" aria-labelledby="catch-title">
+        <div class="section-heading catch-heading">
+          <div>
+            <span class="section-kicker">KEEP A RECORD OF THE DAY</span>
+            <h2 id="catch-title">Today's catch</h2>
+            <p>Your entries stay in this browser on this device.</p>
+          </div>
+          <div class="catch-total"><span class="total-icon" aria-hidden="true">✳</span><span><strong id="catch-total">0 kg</strong><small>total logged</small></span></div>
+        </div>
+        <div class="catch-layout">
+          <form class="catch-form" id="catch-form">
+            <div class="form-heading"><span class="form-icon" aria-hidden="true">＋</span><span><strong>Add a catch</strong><small>All fields are required.</small></span></div>
+            <label class="form-field" for="species-name">Fish or seafood name
+              <input id="species-name" name="species" type="text" list="species-suggestions" maxlength="60" placeholder="e.g. Tambakol" autocomplete="off" required />
+              <datalist id="species-suggestions"><option value="Yellowfin tuna (Tulingan / Tambakol)"></option><option value="Tilapia"></option><option value="Mud crab (Alimango)"></option></datalist>
+            </label>
+            <div class="form-row">
+              <label class="form-field" for="catch-weight">Weight <span>(kg)</span>
+                <input id="catch-weight" name="weight" type="number" inputmode="decimal" min="0.1" max="10000" step="0.1" placeholder="e.g. 2.5" required />
+              </label>
+              <label class="form-field" for="catch-date">Date caught
+                <input id="catch-date" name="date" type="date" required />
+              </label>
+            </div>
+            <button class="button button-primary submit-button" type="submit">Save catch <span aria-hidden="true">→</span></button>
+            <p class="form-privacy"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="8" width="12" height="9" rx="2" /><path d="M7 8V6a3 3 0 0 1 6 0v2" /></svg> Saved only on this device. No account needed.</p>
+          </form>
+          <div class="catch-records">
+            <div class="records-heading"><h3>Catch records</h3><span id="record-count">0 records</span></div>
+            <div class="table-wrap">
+              <table>
+                <caption class="visually-hidden">Fish catch records logged on this device</caption>
+                <thead><tr><th scope="col">Species</th><th scope="col">Date</th><th scope="col" class="numeric">Weight</th></tr></thead>
+                <tbody id="catch-table-body"></tbody>
+              </table>
+              <div class="empty-state" id="empty-state"><span class="empty-fish" aria-hidden="true">〰</span><strong>No catches logged yet</strong><span>Your catch records will show up here.</span></div>
+            </div>
+            <p class="records-note"><span aria-hidden="true">✳</span> Catch records are for personal reference and local learning; they are not an official landing report.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">Bayan<span>Isla</span></a>
+      <span>Para sa mangingisda. Para sa dagat.</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
